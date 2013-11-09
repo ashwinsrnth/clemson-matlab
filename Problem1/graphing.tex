@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+\definecolor{bg}{rgb}{0.95, 0.95, 0.95}
+\begin{document}
+
+\section*{Problem 1: }
+
+You know how to spawn a vector of values and evaluate and graph a 
+function. Let's do something cool with functions. Of course, some functions 
+are more interesting than others. For instance, consider this one:
+
+\begin{center}
+$y = e^{-0.2t}sin(t)$
+\end{center}
+
+This function describes the behaviour of a damped spring with time.
+See \url{http://en.wikipedia.org/wiki/File:Damped_spring.gif}. 
+
+Notice that the paramter $t$ is a measure of \emph{time} in say, seconds. 
+Graph $y$ for $t$ from 0 to 30 seconds. Convince yourself that this figure 
+does indeed describe the behaviour of a damped spring.
+
+Simply graphing a function can yield a surprising amount of information.
+For instance, with the figure you generated, you should be able to:
+
+\begin{itemize}
+\item{Find the maximum amplitude (the first peak)}
+\item{Find the time at which the 3rd peak is reached}
+\item{Replace 0.2 with some other numbers
+    between 0 and 1. Can you attach a physical significance
+    to this number?}
+\end{itemize}
+
+
+
+\end{document}
+

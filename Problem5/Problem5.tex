@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+\definecolor{bg}{rgb}{0.95, 0.95, 0.95}
+
+\begin{document}
+\section*{Problem 5}
+
+Matlab is great for \emph{post processing} of results from experiments
+or simulations. Post processing is a means of representing results in
+a way that \emph{reveals} something about data. In this problem, you
+will post process the results of a heat transfer simulation (don't worry
+about the physics, we did that bit for you).
+
+We stored information about the problem and the results in text 
+files \texttt{t.txt, X.txt, Y.txt and temps.txt}. \textbf{Review the relevant
+slides to understand the problem and the text files}.
+
+Your objective is to make an animation out of the results so that
+we can understand how the heat transfer happened better.
+
+
+\begin{minted}[bgcolor=bg]{octave}
+                                           
+    % This code reads the results of a heat conduction 
+    % simulation
+    % and makes an animation of them.
+    %  
+    % 
+    %
+
+    X = dlmread('X.txt');
+
+    % Similarly, read the rest of the text files
+    % Y.txt, t.txt and temps.txt
+    % Save the contents to variables names 'Y', 't' 
+    % and 'temps' respectively
+    % You might want to try reading these on the
+    % shell first, and checking their sizes.
+
+    % ---------------- YOUR CODE HERE --------------- %
+
+
+
+    % ----------------------------------------------- %
+
+    % The next few lines of code read the first row
+    % of 'temps', and reshape it to the same size
+    % as 'X' and 'Y'. We then plot a 'contour' of the
+    % temperatures. This image is the first 'frame' of
+    % our movie.
+
+    % Rewrite the code to:
+    %
+    % - Loop over all the time steps
+    %       - Extract the temperatures 
+    %         corresponding to the time step
+    %       - Reshape the temperature vector extracted
+    %       - Draw a contour plot of the temperatures
+    %       - Add the plot to the 'list of frames'
+
+
+    % --------------- REWRITE THIS CODE -------------- %
+    temps = T(1,:);
+    temps = reshape(temps, 40, 40);
+    mcontourf(x, y, temps);
+    F(1) = getframe;
+    % ------------------------------------------------ %
+
+    % Play the movie 5 times
+    movie(F, 5);
+
+
+\end{minted}
+\end{document}
