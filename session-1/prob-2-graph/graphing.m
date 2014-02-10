@@ -1,9 +1,11 @@
-% We want to graph the function e(-0.2t)sin(t)
+% We want to graph the function e^(-0.2t)sin(t)
 % for values of 't' from 0 to 30 minutes
 %
 
+
 % Create the vector t
-t = linspace(0, 30, 100); % After you're done, try 10 points instead of 100
+t = linspace(0, 30, 10); % After you're done, try 100 points instead of 10
+
 
 % Try graphing the following functions on the shell 
 % first:
