@@ -1,6 +1,6 @@
-x = load('read_vector.txt');
+x = dlmread('read_vector.txt');
 m = mean(x);
 y = (x - mean(x))';
 
 
-save('output.txt', 'y')
+dlmwrite('output.txt', 'y', 'newline', 'pc')
