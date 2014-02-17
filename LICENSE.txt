@@ -3,8 +3,9 @@ All of this material is distributed under the MIT License.
 
 Authors:
 
-Ashwin Srinath - atrikut@g.clemson.edu
-Zane Troyer    - ztroyer@g.clemson.edu
+Ashwin Srinath 		- atrikut@g.clemson.edu
+Zane Troyer    		- ztroyer@g.clemson.edu
+Goutham Pacha Ravi 	- gpachar@clemson.edu
 
 
 The MIT License (MIT)
